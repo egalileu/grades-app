@@ -111,6 +111,12 @@ const GradeList = () => {
             <h4>Grade</h4>
             <div>
               <label>
+                <strong>Id:</strong>
+              </label>{' '}
+              {currentGrade._id}
+            </div>
+            <div>
+              <label>
                 <strong>Name:</strong>
               </label>{' '}
               {currentGrade.name}
@@ -135,7 +141,7 @@ const GradeList = () => {
             </div>
 
             <Link
-              to={'/grade/' + currentGrade.id}
+              to={'/grade/' + currentGrade._id}
               className="badge badge-warning"
             >
               Edit
